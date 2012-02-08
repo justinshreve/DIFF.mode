@@ -1,0 +1,15 @@
+DIFF.mode
+http://github.com/justinshreve/DIFF.mode
+
+Diff highlighting for Coda (http://www.panic.com/coda/)
+
+Supported Extensions:
+------------------------------
+
+.diff
+.patch
+
+Install:
+------------------------------
+
+Copy the "DIFF.mode" folder to "~/Library/Application Support/Coda/Modes"

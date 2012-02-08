@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "syntax.dtd">
+<syntax>
+
+<head>
+	<name>DIFF</name> <!-- The definitions title -->
+	<charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@$"]]></charsintokens> 
+	<charsincompletion><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@$</=>!]]></charsincompletion> 
+</head>
+
+<states>
+    
+	<default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal" usesymbolsfrommode="DIFF" useautocompletefrommode="DIFF" usespellchecking="yes">
+                  
+		<state id="Additions" color="#00611C" font-weight="normal">
+				<begin><regex>^(?:\+)</regex></begin>
+		<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
+		</state>
+
+		<state id="Subtractions" color="#CC1100" font-weight="normal">
+			<begin><regex>^(?:-)</regex></begin>
+			<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
+		</state>
+		
+		<state id="Other" color="#000033" font-weight="normal" font-style="italic">
+			<begin><regex>^(?:\\|Index:|==)</regex></begin>
+			<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
+		</state>   
+		
+		<state id="Line Numbers" color="#3300FF" font-weight="bold">
+			<begin><regex>^(?:@@)</regex></begin>
+			<end><regex>@@</regex></end>
+		</state>                 
+
+	</default>
+
+</states>
+
+</syntax>
