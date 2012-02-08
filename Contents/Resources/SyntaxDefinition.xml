@@ -13,8 +13,8 @@
 	<default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal" usesymbolsfrommode="DIFF" useautocompletefrommode="DIFF" usespellchecking="yes">
                   
 		<state id="Additions" color="#00611C" font-weight="normal">
-				<begin><regex>^(?:\+)</regex></begin>
-		<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
+			<begin><regex>^(?:\+)</regex></begin>
+			<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
 		</state>
 
 		<state id="Subtractions" color="#CC1100" font-weight="normal">
