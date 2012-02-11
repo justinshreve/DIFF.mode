@@ -14,17 +14,17 @@
                   
 		<state id="Additions" color="#00611C" font-weight="normal">
 			<begin><regex>^(?:\+)</regex></begin>
-			<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
+			<end><regex>(?:[\n\r])</regex></end>
 		</state>
 
 		<state id="Subtractions" color="#CC1100" font-weight="normal">
 			<begin><regex>^(?:-)</regex></begin>
-			<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
+			<end><regex>(?:[\n\r])</regex></end>
 		</state>
 		
 		<state id="Other" color="#000033" font-weight="normal" font-style="italic">
 			<begin><regex>^(?:\\|Index:|==)</regex></begin>
-			<end><regex>(?:[\n\r])|.?(?=\?&gt;)</regex></end>
+			<end><regex>(?:[\n\r])</regex></end>
 		</state>   
 		
 		<state id="Line Numbers" color="#3300FF" font-weight="bold">
